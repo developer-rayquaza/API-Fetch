@@ -2,10 +2,10 @@
   "name": "TypescriptAPI",
   "version": "1.0.0",
   "description": "",
-  "main": "source/server.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "dev": "nodemon source/server.ts",
-    "build": "rm -rf build/ && prettier --write source/ && tsc"
+    "dev": "nodemon src/server.ts",
+    "build": "rm -rf build/ && prettier --write src/ && tsc"
   },
   "keywords": [],
   "author": "",
