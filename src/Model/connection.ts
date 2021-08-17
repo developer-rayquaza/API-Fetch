@@ -1,5 +1,7 @@
 import axios from 'axios';
+import * as dotenv from 'dotenv';
 
+dotenv.config();
 
 class Connection{
     static getDB(){
@@ -8,7 +10,7 @@ class Connection{
 
     static getConfiguration(){
         return {
-            baseURL: 'https://jsonplaceholder.typicode.com',
+            baseURL: process.env.API_URI,
             timeout: 1000,
             headers: {'X-Custom-Header': 'foobar'}
         }
